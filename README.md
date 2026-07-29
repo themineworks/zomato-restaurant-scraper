@@ -45,3 +45,10 @@ The scraping itself — anti-bot handling, proxy rotation, phone/field resolutio
 ## License
 
 MIT © The Mine Works
+
+### Node.js
+
+```bash
+npm install apify-client
+node zomato_restaurant_scraper.mjs --token YOUR_APIFY_TOKEN
+```
