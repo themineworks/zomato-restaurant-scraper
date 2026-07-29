@@ -1,0 +1,14 @@
+{
+  "name": "zomato-restaurant-scraper",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Node.js client for the themineworks/zomato-scraper Apify actor",
+  "main": "zomato_restaurant_scraper.mjs",
+  "scripts": {
+    "start": "node zomato_restaurant_scraper.mjs"
+  },
+  "dependencies": {
+    "apify-client": "^1.9.2"
+  },
+  "license": "MIT"
+}

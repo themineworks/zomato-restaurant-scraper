@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Demy",
+    "city": "Mumbai",
+    "locality": "Lower Parel, Mumbai",
+    "address": "Ground Floor, Trade Centre, Kamala Mills Compound, A Wing, Lower Parel, Mumbai",
+    "cuisines": [
+      "North Indian",
+      "Pizza",
+      "Asian",
+      "Chinese",
+      "Japanese",
+      "Italian",
+      "Continental",
+      "Sushi"
+    ],
+    "rating_dining": 4.3,
+    "rating_delivery": 3.8,
+    "cost_for_two": 2300,
+    "restaurant_url": "https://www.zomato.com/mumbai/demy-lower-parel",
+    "image_url": "https://b.zmtcdn.com/data/pictures/4/20477454/d6ee161b042787e2809726a59c2e0e0a_featured_v2.jpg",
+    "scraped_at": "2026-07-23T06:18:57.561Z"
+  },
+  {
+    "name": "3 Wise Monkeys",
+    "city": "Mumbai",
+    "locality": "Lower Parel, Mumbai",
+    "address": "Senapti Bapat Marg, Lower Parel, Mumbai",
+    "cuisines": [
+      "Bar Food",
+      "Chinese",
+      "Thai",
+      "North Indian",
+      "South Indian",
+      "Indian",
+      "Sichuan"
+    ],
+    "rating_dining": 4.3,
+    "cost_for_two": 2400,
+    "restaurant_url": "https://www.zomato.com/mumbai/3-wise-monkeys-lower-parel",
+    "image_url": "https://b.zmtcdn.com/images/res_avatar_476_320_1x_new.png",
+    "scraped_at": "2026-07-23T06:18:57.889Z"
+  },
+  {
+    "name": "Punjab Grill",
+    "city": "Mumbai",
+    "locality": "Bandra Kurla Complex, Mumbai",
+    "address": "G 5, The Capital, G Block, Bandra Kurla Complex, Mumbai",
+    "cuisines": [
+      "North Indian",
+      "Kebab",
+      "Biryani",
+      "Mughlai"
+    ],
+    "rating_dining": 4.4,
+    "rating_delivery": 4.1,
+    "cost_for_two": 2500,
+    "restaurant_url": "https://www.zomato.com/mumbai/punjab-grill-bandra-kurla-complex",
+    "image_url": "https://b.zmtcdn.com/data/pictures/5/18747095/82203e20fccf2aefceef33579c8365ac_featured_v2.jpg",
+    "scraped_at": "2026-07-23T06:18:57.946Z"
+  }
+]
