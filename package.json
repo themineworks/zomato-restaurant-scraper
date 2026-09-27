@@ -1,14 +1,15 @@
 {
   "name": "zomato-restaurant-scraper",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
-  "description": "Node.js client for the themineworks/zomato-scraper Apify actor",
+  "description": "India restaurant listings, ratings, and cost-for-two from Zomato. Python, Node.js and cURL clients for the Zomato Scraper on Apify, pay per result.",
   "main": "zomato_restaurant_scraper.mjs",
   "scripts": {
     "start": "node zomato_restaurant_scraper.mjs"
   },
   "dependencies": {
-    "apify-client": "^1.9.2"
+    "apify-client": "^2.9.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://themineworks.com/actors/zomato-scraper/"
 }

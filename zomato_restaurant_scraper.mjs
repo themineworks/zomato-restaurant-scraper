@@ -1,20 +1,18 @@
 #!/usr/bin/env node
-// zomato-scraper — Apify actor client.
-// Node.js client for the themineworks/zomato-scraper Apify actor: runs it, waits, saves results.json.
-// Free Apify account + API token: https://console.apify.com/sign-up
+// Node.js client for the themineworks/zomato-scraper actor on Apify: runs it and saves results.json.
+// Flags map 1:1 to the actor's input. Free API token: https://console.apify.com/sign-up
+// Docs and pricing: https://themineworks.com/actors/zomato-scraper/
 import { ApifyClient } from 'apify-client';
 import { writeFileSync } from 'node:fs';
 
 const ACTOR = 'themineworks/zomato-scraper';
 
-// Flags map 1:1 to the actor's input schema. Run: node zomato_restaurant_scraper.mjs --token YOUR_TOKEN --city "Mumbai"
 function parseArgs(argv) {
     const out = {};
     for (let i = 0; i < argv.length; i++) {
         if (!argv[i].startsWith('--')) continue;
         const key = argv[i].slice(2);
-        const val = (argv[i + 1] && !argv[i + 1].startsWith('--')) ? argv[++i] : true;
-        out[key] = val;
+        out[key] = argv[i + 1] && !argv[i + 1].startsWith('--') ? argv[++i] : true;
     }
     return out;
 }
@@ -22,14 +20,15 @@ function parseArgs(argv) {
 const args = parseArgs(process.argv.slice(2));
 const token = args.token || process.env.APIFY_TOKEN;
 if (!token) {
-    console.error('Provide --token or set APIFY_TOKEN — free token at https://console.apify.com/sign-up');
+    console.error('Provide --token or set APIFY_TOKEN. Free token: https://console.apify.com/sign-up');
     process.exit(1);
 }
 
 const runInput = {};
-if (args['city'] !== undefined) runInput.city = args['city'];
-if (args['search-query'] !== undefined) runInput.searchQuery = args['search-query'];
+if (args['city'] !== undefined) runInput.city = String(args['city']);
+if (args['search-query'] !== undefined) runInput.searchQuery = String(args['search-query']);
 if (args['max-results'] !== undefined) runInput.maxResults = parseInt(args['max-results'], 10);
+if (args['allow-residential-fallback'] !== undefined) runInput.allowResidentialFallback = args['allow-residential-fallback'] === true || args['allow-residential-fallback'] === 'true';
 
 const client = new ApifyClient({ token });
 console.log(`Running ${ACTOR} ...`);
