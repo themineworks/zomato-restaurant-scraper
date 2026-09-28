@@ -5,7 +5,7 @@ Scrape Zomato restaurant listings by city and cuisine: name, locality, address, 
 **Run it on Apify:** [apify.com/themineworks/zomato-scraper](https://apify.com/themineworks/zomato-scraper)
 **Docs, FAQ and pricing:** [themineworks.com/actors/zomato-scraper](https://themineworks.com/actors/zomato-scraper/)
 
-**Price:** $3.00 per 1,000 restaurants on Apify's free plan, down to $1.80 on higher plans, plus a $0.005 start fee per run. Failed and empty results are never charged.
+**Price:** From $1.80 per 1,000 restaurants on Apify's higher plans ($3.00 on the free plan), plus a $0.005 start fee per run. Failed and empty results are never charged.
 
 ## What it returns
 
@@ -120,7 +120,7 @@ Yes. The actor returns both, with separate rating fields for dining and delivery
 
 ### What is the price?
 
-$0.003 per restaurant delivered. Nothing charged on failure.
+Pay per result: from $1.80 per 1,000 restaurants on Apify's higher plans, $3.00 on the free plan, plus a $0.005 start fee per run. Failed results are never charged.
 
 ### Can I export the results to CSV or Excel?
 
